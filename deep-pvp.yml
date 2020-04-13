@@ -1,0 +1,37 @@
+#conda env create -f deep-pvp.yml
+#conda activate deep-pvp
+#conda deactivate
+#conda env list
+
+####remove an environment:
+#conda env remove --name deep-pvp-free-ver
+#conda info --envs
+
+name: deep-pvp
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - conda-forge::openjdk=8
+  - conda-forge::python=2.7
+  - conda-forge::backports.weakref
+  - conda-forge::bleach
+  - conda-forge::funcsigs
+  - conda-forge::h5py
+  - conda-forge::html5lib
+  - conda-forge::Keras
+  - defaults::Markdown
+  - conda-forge::mock
+  - conda-forge::numpy
+  - conda-forge::pandas
+  - defaults::pbr
+  - conda-forge::protobuf
+  - conda-forge::python-dateutil
+  - conda-forge::pytz
+  - conda-forge::PyYAML
+  - conda-forge::scipy
+  - conda-forge::six
+  - conda-forge::tensorflow
+  - defaults::tensorflow-tensorboard
+  - conda-forge::Theano
+  - conda-forge::Werkzeug
